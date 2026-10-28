@@ -22,7 +22,7 @@ const PROJECTS = [
     title: "Default Noli rerender",
     subtitle: "High contrast default noli render",
     description: "Made right after YAAI noli.",
-    image: "assets/DefaultNoli", // Example: "assets/noli-purple.png"
+    image: "assets/DefaultNoli.png",
     tags: ["Roblox Studio", "Atmosphere", "Lighting"],
     year: "2026",
     featured: true,
@@ -34,7 +34,7 @@ const PROJECTS = [
     title: "Mafioso rerender",
     subtitle: "Mafioso rendered in a more cinematic style",
     description: "Mafioso from Forsaken rerendered",
-    image: "assets/MafiosoCinematic",
+    image: "assets/MafiosoCinematic.png",
     tags: ["Lighting","CInematic", "Roblox Studio"],
     year: "2026",
     featured: false,
