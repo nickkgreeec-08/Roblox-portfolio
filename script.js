@@ -1,66 +1,68 @@
-/*
-  NICKK PORTFOLIO — QUICK EDIT GUIDE
-  ----------------------------------
-  To add a project, copy one object in PROJECTS and change its values.
-  category must be: "animation", "rendering", or "scripting".
-  Put image files inside /assets and use e.g. image: "assets/my-render.png".
-  Leave image: "" to show the built-in placeholder.
-  Keep descriptions honest: only list work you have actually made.
-*/
-
 const PROFILE = {
-  discordUrl: "https://discord.com/", // Replace with your invite/profile link if appropriate.
-  robloxUrl: "https://www.roblox.com/", // Replace with your Roblox profile URL.
+  discordUrl: "https://discord.com/users/1435599404106256394",
+  robloxUrl: "https://www.roblox.com/users/4053258054/profile",
 };
 
 const PROJECTS = [
   {
-    id: "render-noli-monochrome",
+    id: "render-noli-yaai",
     category: "rendering",
-    title: "Noli — Monochrome",
-    subtitle: "High-contrast character composition",
-    description: "A black-and-white Roblox Studio render focused on bold silhouettes, a split-face design, and graphic composition.",
-    image: "", // Example: "assets/noli-monochrome.png"
+    title: "YAAI noli skin rerender",
+    subtitle: "YAAI Noli skin but if i rendered it",
+    description: "One of my latest works. I personally love it :)",
+    image: "assets/YaaiNoli.png",
     tags: ["Roblox Studio", "Lighting", "Composition"],
     year: "2026",
     featured: true,
-    link: "" // Optional: link to a public post or video.
+    link: ""
   },
   {
-    id: "render-noli-purple",
+    id: "render-noli-default",
     category: "rendering",
-    title: "Noli — Neon",
-    subtitle: "Purple atmospheric lighting",
-    description: "A dark Noli render using strong purple and blue lighting, deep shadows, and a bright star detail to create a cinematic mood.",
-    image: "", // Example: "assets/noli-purple.png"
+    title: "Default Noli rerender",
+    subtitle: "High contrast default noli render",
+    description: "Made right after YAAI noli.",
+    image: "assets/DefaultNoli", // Example: "assets/noli-purple.png"
     tags: ["Roblox Studio", "Atmosphere", "Lighting"],
     year: "2026",
     featured: true,
     link: ""
   },
   {
-    id: "animation-placeholder",
-    category: "animation",
-    title: "Animation project",
-    subtitle: "Replace with your own animation",
-    description: "Add an animation you made here. Include what you animated, the intended feel, and any technical details worth showing.",
-    image: "",
-    tags: ["Animation", "Roblox Studio"],
+    id: "render-mafioso",
+    category: "rendering",
+    title: "Mafioso rerender",
+    subtitle: "Mafioso rendered in a more cinematic style",
+    description: "Mafioso from Forsaken rerendered",
+    image: "assets/MafiosoCinematic",
+    tags: ["Lighting","CInematic", "Roblox Studio"],
     year: "2026",
     featured: false,
     link: ""
   },
   {
-    id: "scripting-placeholder",
+    id: "Nick-engine",
     category: "scripting",
-    title: "Scripting project",
-    subtitle: "Replace with your own system",
-    description: "Add a Luau system you built here. Explain what it does, how it works at a high level, and what you personally implemented.",
+    title: "Nick Engine",
+    subtitle: "A utility engine made from the ground up.",
+    description: "A utility Engine i use to make scripting WAY easier. (no image)",
     image: "",
     tags: ["Luau", "Roblox"],
     year: "2026",
     featured: false,
     link: ""
+  },
+  {
+    id: "ob12",
+    category: "scripting",
+    title: "Oofed by 12:00",
+    subtitle: "An Asymetrical horror game i animate and script for.",
+    description: "Asym horror game i work for (NOT OWNED BY ME!)",
+    image: "assets/ob12.png",
+    tags: ["Luau", "Roblox"],
+    year: "2026",
+    featured: false,
+    link: "https://discord.gg/SATdGxPeY"
   }
 ];
 
