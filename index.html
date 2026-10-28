@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b0d">
+  <meta name="description" content="Nickk's Roblox development portfolio: animation, rendering, and scripting.">
+  <title>Nickk — Roblox Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Nickk portfolio home">
+      <span class="brand-mark">N<span>.</span></span>
+      <span class="brand-copy"><strong>NICKK</strong><small>ROBLOX DEVELOPER</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="mainNav" aria-label="Main navigation">
+      <a href="#home" class="nav-link active" data-section="home">Home</a>
+      <a href="#work" class="nav-link" data-section="work">Portfolio</a>
+      <a href="#about" class="nav-link" data-section="about">About</a>
+      <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+    </nav>
+    <a class="header-cta" href="#contact">LET'S TALK <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> AVAILABLE FOR COLLABORATION</p>
+        <h1>Building worlds<br>worth <span class="glitch" data-text="fearing.">fearing.</span></h1>
+        <p class="hero-text">Roblox developer focused on atmosphere, character work, and gameplay systems. Interested in helping build memorable horror experiences.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">EXPLORE MY WORK <span>↓</span></a>
+          <a class="button button-quiet" href="#contact">GET IN TOUCH <span>↗</span></a>
+        </div>
+        <div class="hero-meta">
+          <div><strong>03</strong><span>SKILL AREAS</span></div>
+          <div><strong>ROBLOX</strong><span>STUDIO WORKFLOW</span></div>
+          <div><strong>HORROR</strong><span>GENRE INTEREST</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Decorative horror-inspired graphic">
+        <div class="scanline"></div>
+        <div class="art-ring ring-one"></div><div class="art-ring ring-two"></div>
+        <div class="crosshair">+</div>
+        <div class="art-label label-top">SIGNAL FOUND // 001</div>
+        <div class="art-core"><span class="core-eye"></span><span class="core-eye"></span><span class="core-mouth"></span></div>
+        <div class="art-label label-bottom">DO NOT LOOK AWAY</div>
+        <div class="art-coordinates">51°30'26.4"N<br>00°07'39.0"W</div>
+      </div>
+    </section>
+
+    <section class="section work-section" id="work">
+      <div class="section-heading">
+        <div><p class="eyebrow">SELECTED WORK / 001—∞</p><h2>My <span>portfolio.</span></h2></div>
+        <p class="section-intro">Choose a discipline to explore. Add projects in <code>script.js</code>—the cards update automatically.</p>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Portfolio categories">
+        <button class="tab active" role="tab" aria-selected="true" data-category="animation"><span class="tab-index">01</span> Animation <span class="tab-count" id="count-animation">00</span></button>
+        <button class="tab" role="tab" aria-selected="false" data-category="rendering"><span class="tab-index">02</span> Rendering <span class="tab-count" id="count-rendering">00</span></button>
+        <button class="tab" role="tab" aria-selected="false" data-category="scripting"><span class="tab-index">03</span> Scripting <span class="tab-count" id="count-scripting">00</span></button>
+      </div>
+      <div class="project-grid" id="projectGrid" aria-live="polite"></div>
+      <p class="empty-note" id="emptyNote" hidden>No projects in this category yet. Add one in <code>script.js</code>.</p>
+    </section>
+
+    <section class="about-section section" id="about">
+      <div class="about-stamp"><span>ROBLOX</span><strong>DEV</strong><span>PORTFOLIO / 2026</span></div>
+      <div class="about-copy">
+        <p class="eyebrow">A LITTLE ABOUT ME</p>
+        <h2>Technical mind.<br><span>Atmospheric taste.</span></h2>
+        <p>I'm a Roblox creator interested in building experiences that feel polished, tense, and memorable. My work spans character animation, Roblox Studio rendering, and Luau scripting.</p>
+        <p>This portfolio is a living document. I'll keep adding experiments, finished pieces, and breakdowns as I improve.</p>
+        <div class="skill-tags"><span>ROBLOX STUDIO</span><span>LUAU</span><span>LIGHTING</span><span>CHARACTER WORK</span><span>HORROR GAMES</span></div>
+      </div>
+    </section>
+
+    <section class="contact-section section" id="contact">
+      <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
+      <h2>Let's make something<br><span>unforgettable.</span></h2>
+      <p class="contact-copy">Applying to a team, have a question, or want to collaborate? Reach out through the links below.</p>
+      <div class="contact-actions">
+        <a class="button button-primary" id="discordLink" href="https://discord.com/" target="_blank" rel="noreferrer">DISCORD <span>↗</span></a>
+        <a class="button button-quiet" id="robloxLink" href="https://www.roblox.com/" target="_blank" rel="noreferrer">ROBLOX PROFILE <span>↗</span></a>
+      </div>
+      <p class="contact-hint">Remember to replace the example links in <code>script.js</code> with your own public profile links.</p>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="footer-brand" href="#home">N<span>.</span></a><span>© <span id="year"></span> NICKK — MADE IN ROBLOX STUDIO (AND A LITTLE HTML).</span><a href="#home">BACK TO TOP ↑</a></footer>
+
+  <dialog class="project-dialog" id="projectDialog">
+    <button class="dialog-close" id="dialogClose" aria-label="Close project details">×</button>
+    <div class="dialog-image" id="dialogImage"></div>
+    <div class="dialog-content"><p class="eyebrow" id="dialogCategory"></p><h3 id="dialogTitle"></h3><p id="dialogDescription"></p><div class="skill-tags" id="dialogTags"></div><a id="dialogLink" class="button button-primary" href="#" target="_blank" rel="noreferrer" hidden>VIEW PROJECT ↗</a></div>
+  </dialog>
+</body>
+</html>
